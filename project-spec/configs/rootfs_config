@@ -156,10 +156,10 @@ CONFIG_haveged=y
 #
 # i2c-tools 
 #
-# CONFIG_i2c-tools is not set
-# CONFIG_i2c-tools-dev is not set
+CONFIG_i2c-tools=y
+CONFIG_i2c-tools-dev=y
 # CONFIG_i2c-tools-dbg is not set
-# CONFIG_i2c-tools-misc is not set
+CONFIG_i2c-tools-misc=y
 
 #
 # init-ifupdown 
@@ -812,14 +812,14 @@ CONFIG_pciutils=y
 #
 # vim 
 #
-# CONFIG_vim is not set
-# CONFIG_vim-syntax is not set
+CONFIG_vim=y
+CONFIG_vim-syntax=y
 # CONFIG_vim-dev is not set
-# CONFIG_vim-help is not set
+CONFIG_vim-help=y
 # CONFIG_vim-common is not set
-# CONFIG_vim-vimrc is not set
-# CONFIG_vim-tutor is not set
-# CONFIG_vim-tools is not set
+CONFIG_vim-vimrc=y
+CONFIG_vim-tutor=y
+CONFIG_vim-tools=y
 # CONFIG_vim-dbg is not set
 
 #
@@ -3882,10 +3882,17 @@ CONFIG_imagefeature-debug-tweaks=y
 CONFIG_Init-manager-sysvinit=y
 
 #
+# apps 
+#
+CONFIG_uio-gpio-test=y
+
+#
 # user packages 
 #
-# CONFIG_gpio-demo is not set
-# CONFIG_peekpoke is not set
+CONFIG_gpio-demo=y
+CONFIG_mg=y
+CONFIG_nano=y
+CONFIG_peekpoke=y
 
 #
 # PetaLinux RootFS Settings
