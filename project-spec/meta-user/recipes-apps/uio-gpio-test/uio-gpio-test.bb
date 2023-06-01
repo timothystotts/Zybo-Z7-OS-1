@@ -9,6 +9,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 SRC_URI = " \
 		file://uio-gpio-test.c \
+		file://uio-gpio-pwm-test.c \
 		file://Makefile \
 		  "
 
@@ -24,5 +25,6 @@ do_compile() {
 do_install() {
 	     install -d ${D}${bindir}
 	     install -m 0755 uio-gpio-test ${D}${bindir}
+	     install -m 0755 uio-gpio-pwm-test ${D}${bindir}
 }
 
