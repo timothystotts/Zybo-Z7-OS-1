@@ -4,13 +4,14 @@
 
 SUMMARY = "Simple uio-gpio-test application"
 SECTION = "PETALINUX/apps"
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
+LICENSE = "GPL-2.0"
+LIC_FILES_CHKSUM = "file://COPYING;md5=393a5ca445f6965873eca0259a17f833"
 
 SRC_URI = " \
 		file://uio-gpio-test.c \
 		file://uio-gpio-pwm-test.c \
 		file://Makefile \
+		file://COPYING \
 		  "
 
 S = "${WORKDIR}"
@@ -27,4 +28,3 @@ do_install() {
 	     install -m 0755 uio-gpio-test ${D}${bindir}
 	     install -m 0755 uio-gpio-pwm-test ${D}${bindir}
 }
-

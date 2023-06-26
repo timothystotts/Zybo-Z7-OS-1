@@ -1,7 +1,25 @@
 /*
- * This code can be freely used and copied for your own purposes.
- * It is provided as is, no warranty provided.
- */
+   uio-gpio-pwm-test - A GPIO and PWM demo with UIO drivers. Based on libuio0 lsuio.c main
+                       routine and some non-licensed Internet examples. MIT licensed code
+                       borrowed from Timothy Stotts' own software GitHub, modified, and
+                       relicensed as GPL-2.0. Additionally, this program links to libuio of
+                       PetaLinux 2022.1, which is licensed under the GPL-2.0.
+
+   Copyright (C) 2023 Timothy Stotts
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License version 2 as
+   published by the Free Software Foundation.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software Foundation,
+   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
 
 /*
  * References:
@@ -12,6 +30,7 @@
  * https://www.osadl.org/UIO.uio0.0.html
  * https://forum.digilent.com/topic/16550-uio-access-including-interrupts-when-using-petalinux/
  *
+ * components/yocto/layers/meta-openembedded/meta-oe/recipes-extended/libuio/libuio_0.2.1.bb
  */
 
 #include <stdlib.h>
